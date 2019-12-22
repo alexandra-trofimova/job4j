@@ -22,7 +22,7 @@ public class SqMaxTest {
     @Test
     public void whenThirdMax() {
         SqMax check = new SqMax();
-        int result = check.max(1, 4, 8, 6);
+        int result = check.max(6, 4, 8, 1);
         assertThat(result, is(8));
     }
     @Test
