@@ -6,11 +6,10 @@ public class Slash {
             for (int cell = 0; cell < size; cell++) {
                 boolean left = (row == cell);
                 boolean right = ((size - cell) == (1 + row));
-                if (left) {
+                if ((left) || (right)) {
                     System.out.print("0");
-                } else if (right) {
-                    System.out.print("0");
-                } else {
+                }
+                else {
                     System.out.print(" ");
                 }
             }
