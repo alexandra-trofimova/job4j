@@ -14,9 +14,9 @@ public class Defragment {
                        array[index] = cell1;
                        array[x] = null;
                        break;
-                   }
-                    else
+                    } else {
                         x++;
+                    }
                 }
             }
 

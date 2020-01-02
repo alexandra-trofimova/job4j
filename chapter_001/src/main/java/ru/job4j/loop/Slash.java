@@ -8,8 +8,7 @@ public class Slash {
                 boolean right = ((size - cell) == (1 + row));
                 if ((left) || (right)) {
                     System.out.print("0");
-                }
-                else {
+                } else {
                     System.out.print(" ");
                 }
             }
