@@ -1,5 +1,10 @@
 package ru.job4j.array;
-
+/**
+ * Class Класс для поиска в массиве индекса ячейки с заданным значением
+ * @author Alexandra Trofimova
+ * @since 03.01.2019
+ * @version 1
+ */
 public class FindLoop {
     public static int indexOf(int[] data, int el) {
         int rst = -1;

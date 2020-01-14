@@ -1,5 +1,11 @@
 package ru.job4j.loop;
 
+/**
+ * Class Класс для определения, сколько лет нужно, чтобы погасить ипотеку
+ * @author Alexandra Trofimova
+ * @since 30.12.2019
+ * @version 1
+ */
 public class Mortgage {
     public int year(int amount, int salary, double percent) {
         int year = 1;

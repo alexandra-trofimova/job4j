@@ -1,5 +1,11 @@
 package ru.job4j.loop;
 
+/**
+ * Class Класс для построения шахматной доски в псевдографике
+ * @author Alexandra Trofimova
+ * @since 30.12.2019
+ * @version 1
+ */
 public class Board {
     public static void paint(int width, int height) {
         for (int row = 0; row < height; row++) {
@@ -13,7 +19,6 @@ public class Board {
             System.out.println();
         }
     }
-
     public static void main(String[] args) {
         paint(3, 3);
         System.out.println();

@@ -1,5 +1,11 @@
 package ru.job4j.loop;
 
+/**
+ * Class Класс для вычисления суммы четных числе в заданном диапазоне
+ * @author Alexandra Trofimova
+ * @since 30.12.2019
+ * @version 1
+ */
 public class Counter {
     public int add(int start, int finish) {
         int sum = 0;

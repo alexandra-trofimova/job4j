@@ -2,18 +2,20 @@ package ru.job4j.sort;
 
 import java.util.Arrays;
 
+/**
+ * Class Класс для объединения двух массивов
+ * @author Alexandra Trofimova
+ * @since 03.12.2019
+ * @version 1
+ */
 public class Merge {
     public int[] merge(int[] left, int[] right) {
         int[] rsl = new int[left.length + right.length];
         if (left.length == 0) {
-            for (int a = 0; a < rsl.length; a++) {
-                rsl[a] = right[a];
-            }
+            System.arraycopy(right, 0, rsl, 0, rsl.length);
         }
         else if (right.length == 0) {
-            for (int b = 0; b < rsl.length; b++) {
-                rsl[b] = left[b];
-            }
+            System.arraycopy(left, 0, rsl, 0, rsl.length);
         } else {
             int x = 0;
             int y = 0;
