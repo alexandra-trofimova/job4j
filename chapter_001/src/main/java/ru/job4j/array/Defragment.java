@@ -1,21 +1,25 @@
 package ru.job4j.array;
 
-import javax.swing.*;
-
+/**
+ * Class Класс для дефрагментации массива (заполненные ячейки в начало, пустые в конец)
+ * @author Alexandra Trofimova
+ * @since 04.01.2019
+ * @version 1
+ */
 public class Defragment {
     public static String[] compress(String[] array) {
         for (int index = 0; index < array.length; index++) {
             String cell = array[index];
             if (cell == null) {
-                int x = index + 1;
-                while (x < array.length) {
-                    String cell1 = array[x];
-                    if (cell1 != null) {
-                       array[index] = cell1;
-                       array[x] = null;
+                int next = index + 1;
+                while (next < array.length) {
+                    String temp = array[next];
+                    if (temp != null) {
+                       array[index] = temp;
+                       array[next] = null;
                        break;
                     }
-                    x++;
+                    next++;
                 }
             }
 
@@ -23,7 +27,6 @@ public class Defragment {
         }
         return array;
     }
-
     public static void main(String[] args) {
         String[] input = {"I", null, "wanna", null, "be", null, "compressed"};
         String[] compressed = compress(input);

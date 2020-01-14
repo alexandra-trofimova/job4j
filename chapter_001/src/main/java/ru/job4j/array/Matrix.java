@@ -1,5 +1,11 @@
 package ru.job4j.array;
 
+/**
+ * Class Класс для формирования таблицы умножения
+ * @author Alexandra Trofimova
+ * @since 03.01.2019
+ * @version 1
+ */
 public class Matrix {
     public int[][] multiple(int size) {
         int[][] table = new int[size][size];

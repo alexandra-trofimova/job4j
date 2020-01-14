@@ -1,5 +1,11 @@
 package ru.job4j.converter;
 
+/**
+ * Class Класс для конвертации рублей в доллары/евро и наоборот
+ * @author Alexandra Trofimova
+ * @since 03.12.2019
+ * @version 1
+ */
 public class Converter {
     public static int rubleToEuro(int value) {
         return value / 70;

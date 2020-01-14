@@ -1,5 +1,11 @@
 package ru.job4j.condition;
 
+/**
+ * Class Класс для вычисления наибольшего из четырех чисел
+ * @author Alexandra Trofimova
+ * @since 23.12.2019
+ * @version 1
+ */
 public class SqMax {
     public static int max(int first, int second, int third, int forth) {
         int result = forth;

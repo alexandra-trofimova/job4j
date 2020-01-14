@@ -1,5 +1,11 @@
 package ru.job4j.array;
 
+/**
+ * Class Класс для проверки выигрышной комбинации в сокобан
+ * @author Alexandra Trofimova
+ * @since 03.01.2019
+ * @version 1
+ */
 public class MatrixCheck {
     public static boolean monoHorizontal(char[][] board, int x) {
         boolean res = true;
@@ -11,7 +17,6 @@ public class MatrixCheck {
         }
         return res;
     }
-
     public static boolean monoVertical(char[][] board, int y) {
         boolean res = true;
         for (int i = 0; i < board.length; i++) {
@@ -22,7 +27,6 @@ public class MatrixCheck {
         }
         return res;
     }
-
     public static boolean isWin(char[][] board) {
         boolean result = false;
         for (int i = 0; i < board.length; i++) {
