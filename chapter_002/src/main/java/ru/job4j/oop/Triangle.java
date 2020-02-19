@@ -11,6 +11,10 @@ public class Triangle {
         this.third = cp;
     }
 
+    public static boolean exist(double ab, double ac, double bc) {
+        return (ab + ac > bc) && (ab + bc > ac) && (ac + bc > ab);
+    }
+
     public double period(double a, double b, double c) {
         return (a + b + c) / 2;
     }
@@ -21,6 +25,9 @@ public class Triangle {
         double b = first.distance(third);
         double c = second.distance(third);
         double p = period(a, b, c);
-        return Math.sqrt(p * (p - a) * (p - b) * (p - c));
+        if (this.exist(a, b, c)) {
+            rsl = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+        }
+        return rsl;
     }
 }
