@@ -7,6 +7,9 @@ public class Point {
     private int x;
     private int y;
 
+    public int xp = x;
+    public int yp = y;
+
     public Point(int first, int second) {
         this.x = first;
         this.y = second;
