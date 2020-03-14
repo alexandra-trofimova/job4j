@@ -3,7 +3,7 @@ package ru.job4j.inheritance;
 /**
  * Class Класс для вывода отчета
  * @author Alexandra Trofimova
- * @since 13.03.2020
+ * @since 14.03.2020
  * @version 1
  */
 
