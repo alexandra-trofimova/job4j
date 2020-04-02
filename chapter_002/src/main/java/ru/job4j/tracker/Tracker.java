@@ -63,14 +63,25 @@ public class Tracker {
      * @param id - идентификатор заявки, которую ищет метод
      */
     public Item findById(String id) {
-        Item result = new Item(null);
+        int index = indexOf(id);
+        return index != -1 ? items[index] : null;
+    }
+
+    private int indexOf(String id) {
+        int rsl = -1;
         for (int index = 0; index < position; index++) {
-            Item tmp = this.items[index];
-            if (tmp.getId().equals(id)) {
-                result = tmp;
+            if (items[index].getId().equals(id)) {
+                rsl = index;
                 break;
             }
         }
-        return result;
+        return rsl;
+    }
+
+    public Item replace(String id, Item item) {
+        int index = indexOf(id);
+        item.setId(this.items[index].getId());
+        this.items[index] = item;
+        return item;
     }
 }
